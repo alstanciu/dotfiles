@@ -31,6 +31,6 @@ function markup_git_branch {
   fi
 }
 
-export PS1="\[\033[38;5;12m\][\[\033[38;5;10m\]\u\[\033[38;5;12m\]@\[\033[38;5;7m\]\h\[\033[38;5;12m\]]\[\033[38;5;15m\]: \[\033[38;5;7m\]\w\$(markup_git_branch \$(git_branch))\[\033[38;5;12m\]>\[\033[38;5;10m\]\\$\[\033[38;5;7m\] "
+export PS1="\[\033[38;5;10m\]\u\[\033[38;5;12m\]@\[\033[38;5;7m\]\h\[\033[38;5;15m\]: \[\033[38;5;7m\]\w\$(markup_git_branch \$(git_branch))\n\[\033[38;5;10m\]\\$\[\033[38;5;7m\] "
 
 [ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
